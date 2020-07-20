@@ -1,1 +1,1 @@
-# GitHubWebhookPlayground
+# GitHub Webhook Playground
