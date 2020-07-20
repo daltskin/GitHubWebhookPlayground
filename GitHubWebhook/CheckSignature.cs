@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GitHubWebhook
 {
-    public tatic class CheckSignature
+    public static class CheckSignature
     {
         public static bool Validate (string signature, string body, string secret)
         {

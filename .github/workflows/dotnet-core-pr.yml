@@ -1,14 +1,7 @@
-name: .NET Core
+name: .NET Core PR
 
 on:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'     
-        required: true
-        default: 'warning'
-
-  push:
+  pull_request:
     branches: [ master ]
 
 jobs:
