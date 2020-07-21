@@ -44,6 +44,7 @@ namespace GitHubWebhook
             CheckSuiteStatus suiteStatus = JsonConvert.DeserializeObject<CheckSuiteStatus>(requestBody);
 
             string responseMessage = $"The GitHub Check Suite status for {suiteStatus.check_suite.id} {suiteStatus.action} with {suiteStatus.check_suite.conclusion}";
+            log.LogInformation(responseMessage);
             return new OkObjectResult(responseMessage);
         }
     }
