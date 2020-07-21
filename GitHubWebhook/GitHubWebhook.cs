@@ -16,8 +16,7 @@ namespace GitHubWebhook
     {
         [FunctionName("GitHubWebhook")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            ILogger log)
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req, ILogger log)
         {
             log.LogInformation("C# Webhook for GitHub.");
             string requestBody = null;
